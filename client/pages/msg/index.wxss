@@ -1,0 +1,48 @@
+/* pages/msg/index.wxss */
+.msg-list {
+  width: 100%;
+}
+
+.msg-item {
+  min-height: 110px;
+  margin: 10px;
+  background: #fff;
+  padding: 10px;
+}
+
+.msg-content {
+  width: 65%;
+  float: left;
+}
+
+.msg-right {
+  width: 30%;
+  float: left; 
+  margin-left: 10px; 
+  height: 120px;
+}
+
+.time {
+  font-size: 12px;
+  display: block;
+  float: right;
+  color: #bbb;
+}
+
+.msg-img {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px; 
+}
+
+.title {
+  font-size: 14px;
+  display: block;
+  line-height: 20px;
+}
+
+.content {
+  font-size: 13px;
+  margin-top: 10px;
+  color: #666;   
+}

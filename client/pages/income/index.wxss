@@ -1,0 +1,51 @@
+/* pages/income/index.wxss */
+.msg-list {
+  width: 100%;
+}
+
+.msg-item {
+  min-height: 45px;
+  margin: 10px;
+  background: #fff;
+  padding: 10px;
+}
+
+.msg-content {
+  width: 65%;
+  float: left;
+}
+
+.msg-right {
+  width: 30%;
+  float: left; 
+  margin-left: 10px; 
+}
+
+.time {
+  font-size: 12px;
+  display: block;
+  float: right;
+  color: #bbb;
+}
+
+.msg-img {
+  width: 100%;
+  margin-top: 10px; 
+}
+
+.title {
+  font-size: 14px;
+  display: block;
+  line-height: 20px;
+}
+
+.content {
+  font-size: 13px;
+  margin-top: 10px;
+  color: #666;   
+}
+
+.light-desc-price {
+  font-size: 17px;
+  color: #FF9500;
+}

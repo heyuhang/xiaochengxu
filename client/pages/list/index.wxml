@@ -1,0 +1,54 @@
+<view>
+  <view class='ds-home-ad'>
+    <scroll-view scroll-y="true">
+      <swiper autoplay="auto" interval="3000" duration="500">
+        <block wx:for="{{home_pics}}" wx:for-index="index">
+          <swiper-item>
+            <view class="ar_coverpath" data-ad-url="{{home_pics[index].url}}" data-url-type="{{home_pics[index].url_type}}" bindtap="onAdRedirect">
+              <image class="ad-images" src="{{home_pics[index].pic}}" mode="aspectFill" />
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </scroll-view>
+  </view>
+  <view class='clear'></view>
+  <view class="menu-box">
+    <view class="ds-home-search" bindtap="onSearch">
+
+        <view class="ds-search">
+          <image class="search-icon" src="/resources/images/search.png"></image>
+          <text class="search-pa">请输入搜索内容</text>
+          <view class="ds-search-text" name="input"/>
+          <!--
+          <button class="search-bth" formType="submit">搜索</button>-->
+        </view>
+
+    </view>
+    <view class='ds-home-menus'>
+      <view wx:for="{{menu_list}}" wx:for-index="index">
+        <navigator class="ds-home-menu" url="/pages/sort/index?sort={{menu_list[index].id}}&name={{menu_list[index].name}}" hover-class="navigator-hover">
+          <image class="ds-menu-img" src="{{menu_list[index].pic}}" />
+          <text class="ds-menu-text">{{menu_list[index].name}}</text>
+        </navigator>
+      </view>
+    </view>
+    <view class='clear'></view>
+  </view>
+  
+  <view class="sd-list-box">
+    <view class="light-list-item" wx:for="{{light_list}}" wx:for-index="index">
+      <view class="light-img">
+        <image class="light-imgge" src="{{light_list[index].pics[0]}}"></image>
+      </view>
+      <view class='light-desc'>
+        <text class="light-desc-text">{{light_list[index].title}}</text>
+        <text class="light-desc-price">{{light_list[index].price}} 元/件</text>
+        <text class="light-desc-tag">{{light_list[index].tag}} • 月售货{{light_list[index].sales_num}}件</text>
+        <navigator class="ds-list-detail-url" url="/pages/detail/index?id={{light_list[index].id}}" hover-class="navigator-hover">
+          <image class="list-detail-img" src="/resources/images/next.png"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

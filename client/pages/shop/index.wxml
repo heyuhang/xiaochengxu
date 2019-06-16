@@ -1,0 +1,40 @@
+<!--pages/shop/index.wxml-->
+<view class="container">  
+  <view class="ds-shop-list" wx:if="{{light_list.length > 0}}">
+    <view class="address-item" wx:for="{{light_list}}"  wx:for-index="index">
+      <view style="{{item.txtStyle}}"  bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE"  data-index="{{index}}"  class="address-item-top" >
+        <view class="ds-shop-item">
+          <view class='ds-shop-product'>
+            <navigator class="ds-list-detail-url" url="/pages/detail/index?id={{light_list[index].product_id}}" hover-class="navigator-hover">
+              <view class="light-img">
+                <image class="shop-light-imgge" src="{{light_list[index].pics[0]}}"></image>
+              </view>
+            </navigator>
+            <view class='light-desc'>
+              <text class="light-desc-text">{{light_list[index].title}}</text>
+              <text class='light-size-title'>{{light_list[index].size}}</text>
+              <text class="light-desc-price">¥{{light_list[index].price*light_list[index].num}}</text>
+              <view class='ds-shop-product-price'>
+                <a class="shop-jian" data-index="{{index}}" bindtap="onProNumJian">-</a>
+                <input class='light-size' data-index="{{index}}" bindchange="onProNumChange" value='{{light_list[index].num}}'/>
+                <a class="shop-jia"  data-index="{{index}}" bindtap="onProNumJia">+</a>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view bindtap="delItem" class="posit">
+          <view class="del" data-user-id="{{light_list[index].uid}}" data-product-id="{{light_list[index].id}}" catchtap="onDel">删除</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="shop-totle-price" wx:if="{{light_list.length > 0}}">
+    <view class="totle-price">合计：<text class='totle-price-detail'>¥{{totlePrice}}</text></view>
+    <navigator class="ds-detail-shoping-btn" url="/pages/order/index?proId=0" hover-class="navigator-hover">
+    结算</navigator>
+  </view>
+  <view class='empty-shop' wx:if="{{light_list.length == 0}}">
+    <view class='empty-title'>购物车为空</view>
+    <button class='return-btn' bindtap="onIndex">返回首页</button>
+  </view>
+</view>

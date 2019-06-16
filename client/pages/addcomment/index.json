@@ -1,0 +1,9 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#efefef",
+  "navigationBarTitleText": "添加评论",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#efefef",
+  "enablePullDownRefresh": false,
+  "onReachBottomDistance": 50
+}

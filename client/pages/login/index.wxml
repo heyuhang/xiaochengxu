@@ -1,0 +1,14 @@
+<!--pages/login/index.wxml-->
+<view class='detail-box'>
+  <view class='login-box'>
+    <view class='logo-box'>
+      西安灯饰网
+    </view>
+    <view class='btn-login-box'>
+      <button class='order-btn' open-type="getUserInfo" bindgetuserinfo="onLogin">
+      <image src="/resources/images/wechat.png" class='bth-icon'/>
+      微信快速登录</button>
+    </view>
+    <view class="return-index" bindtap="onJumpIndex">返回首页</view>
+  </view>
+</view>

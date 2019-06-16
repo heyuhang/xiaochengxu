@@ -1,0 +1,24 @@
+/* pages/about/index.wxss */
+.order-title {
+    background: #FFF;
+    height: 32px;
+    line-height: 32px;
+    padding: 6px 0 0 12px;
+    font-size: 14px;
+    color: #666;
+    border-left: 3px solid #FF9500;  
+    border-top: 1px solid #efefef;
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+.about-detail {
+  background: #fff;
+  width: 100%;
+  float: left;
+  display: block;
+  font-size: 13px;
+  padding: 10px;
+  line-height: 20px;
+}

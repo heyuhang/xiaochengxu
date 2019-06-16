@@ -1,0 +1,40 @@
+/* pages/address/index.wxss */
+.address-edit {
+  background: #fff;
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #ddd;  
+}
+
+label {
+  padding-left: 10px; 
+  font-size: 13px;
+}
+
+input , picker{
+  margin: 0px 10px 0px 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px; 
+  font-size: 13px;
+  padding: 5px 0px 5px 0px;
+}
+
+.detail-addr {
+  margin-bottom: -1px; 
+}
+
+.order-btn {
+  margin-top: 20px;
+  margin: 20px 10px 0px 10px;
+  font-size: 13px;
+  line-height: 40px; 
+  background: #FF9500;
+  color: #fff;
+}
+
+.cancle-btn {
+  margin: 10px 10px;
+  font-size: 13px;
+  line-height: 40px; 
+  color: #333;  
+}

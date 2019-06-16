@@ -1,0 +1,10 @@
+<!--pages/about/index.wxml-->
+<view>
+  <text class="order-title">关于我们</text>
+  <text class='about-detail'>灯饰网最低价的装修灯饰。</text>
+  <text class="order-title">联系我们</text>
+  <text class='about-detail'>电话：029-84922989</text>
+  <text class='about-detail'>QQ：546604074</text>
+  <text class='about-detail'>微信：lx546604074</text>
+  <text class='about-detail'>地址：西安市户县</text>
+</view>

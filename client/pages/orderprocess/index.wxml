@@ -1,0 +1,57 @@
+<!--pages/orderprocess/index.wxml-->
+<view class='order-content'>
+  <view class='empty-shop' wx:if="{{orderList.length == 0}}">
+    <view class='empty-title'>订单列表为空</view>
+    <button class='return-btn' bindtap="onIndex">返回首页</button>
+  </view>
+  <view wx:if="{{orderList.length > 0}}">
+    <view class='order-list' wx:for="{{orderList}}" wx:for-index="index">
+      <view class='order-item'>
+        <view class='order-list' wx:for="{{orderList[index].proList}}" wx:for-index="indexs">
+          <view class='order-product-list'>
+            <navigator class="ds-home-menu" url="/pages/detail/index?id={{orderList[index].proList[indexs].id}}" hover-class="navigator-hover">
+              <view class='order-img'>
+                <image class="order-product-img" src="{{orderList[index].proList[indexs].pics[0]}}"></image>
+              </view>
+              <view class='order-right'>
+                <view class='light-desc-text'>{{orderList[index].proList[indexs].title}}</view>
+                <text class='pro-desc'>{{orderList[index].proList[indexs].size}} ×{{orderList[index].proList[indexs].num}}</text>
+              </view>
+            </navigator>
+          </view>
+        </view>
+        <view>
+          <text class='order'>订单号：{{orderList[index].id}}</text>
+          <text class='time'>{{orderList[index].addtime}}</text>
+          <view class='order-desc'>
+            <text class='order-addr'>{{orderList[index].address}}</text>
+            <text class='order-price'>¥{{orderList[index].price}}</text>
+          </view>
+          <view class='clear'></view>
+          <view class='order-state'>
+            <text class='state' wx:if="{{orderList[index].state==1}}">待付款</text>
+            <text class='state' wx:if="{{orderList[index].state==2}}">待发货</text>
+            <text class='state' wx:if="{{orderList[index].state==3}}">待收获</text>
+            <text class='state' wx:if="{{orderList[index].state==4}}">待评价</text>
+            <text class='state' wx:if="{{orderList[index].state==5}}">交易完成</text>
+            <navigator wx:if="{{orderList[index].state==1}}" class="order-op" url="/pages/addcomment/index" hover-class="navigator-hover">
+              支付
+            </navigator>
+            <navigator wx:if="{{orderList[index].state==2 || orderList[index].state==3}}" class="order-op" url="/pages/addcomment/index" hover-class="navigator-hover">
+              查看物流
+            </navigator>
+            <navigator wx:if="{{orderList[index].state==4}}" class="order-op" url="/pages/addcomment/index?id={{orderList[index].id}}" hover-class="navigator-hover">
+              评价
+            </navigator>
+            <a wx:if="{{orderList[index].state==1}}" class="order-op" data-id="{{orderList[index].id}}" data-state="1" bindtap="onDelOrder">取消订单</a>
+            <a wx:if="{{orderList[index].state==4 || orderList[index].state==5}}" class="order-op" data-id="{{orderList[index].id}}" data-state="5" bindtap="onDelOrder">删除订单</a>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='my-comp-addr'>
+      <text class='addr-text'>www.xiandengshi.com</text>
+    </view>
+  </view>
+  <view class='clear'></view>
+</view>

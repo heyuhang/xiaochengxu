@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/list/index",
+    "pages/orderprocess/index",
+    "pages/addcomment/index",
+    "pages/comment/index",
+    "pages/my/index",
+    "pages/shop/index",
+    "pages/login/index",
+    "pages/ad/index",
+    "pages/search/index",
+    "pages/detail/index",
+    "pages/about/index",
+    "pages/income/index",
+    "pages/order/index",
+    "pages/address/index",
+    "pages/msg/index",
+    "pages/sort/index",
+    "pages/logs/logs",
+    "pages/pay/pay",
+    "pages/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "西安灯饰网",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#333333",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "resources/images/home-select.png",
+        "iconPath": "resources/images/home.png",
+        "pagePath": "pages/list/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "resources/images/shop-select.png",
+        "iconPath": "resources/images/shop.png",
+        "pagePath": "pages/shop/index",
+        "text": "购物车"
+      },
+      {
+        "selectedIconPath": "resources/images/people-select.png",
+        "iconPath": "resources/images/people.png",
+        "pagePath": "pages/my/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 5000,
+    "connectSocket": 5000,
+    "uploadFile": 60000,
+    "downloadFile": 60000
+  },
+  "sitemapLocation": "sitemap.json"
+}

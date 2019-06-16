@@ -1,0 +1,34 @@
+<!--pages/income/index.wxml-->
+<view class='container'>
+  <view class="msg-list">
+    <view class="msg-item">
+      <view class='msg-content'>
+        <text class="title">分享下单成功</text>
+        <text class="content">获取红包奖励<text class="light-desc-price"> ¥5</text></text>
+      </view>
+      <view class='msg-right'>
+        <text class="time">18/03/24</text>
+      </view>
+    </view>
+
+    <view class="msg-item">
+      <view class='msg-content'>
+        <text class="title">分享下单成功</text>
+        <text class="content">获取红包奖励<text class="light-desc-price"> ¥5</text></text>
+      </view>
+      <view class='msg-right'>
+        <text class="time">18/03/24</text>
+      </view>
+    </view>
+
+    <view class="msg-item">
+      <view class='msg-content'>
+        <text class="title">分享下单成功</text>
+        <text class="content">获取红包奖励<text class="light-desc-price"> ¥5</text></text>
+      </view>
+      <view class='msg-right'>
+        <text class="time">18/03/24</text>
+      </view>
+    </view>
+  </view>
+</view>

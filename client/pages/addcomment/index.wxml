@@ -1,0 +1,43 @@
+<!--pages/addcomment/index.wxml-->
+<view>
+  <view class='addcomment-list'>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class='addcomment-box'>
+        <view wx:for="{{orderDetail.proList}}" wx:for-index="indexs">
+          <view class='order-item'>
+            <view class='order-list'>
+              <view class='order-product-list'>
+                <navigator class="ds-home-menu" url="/pages/detail/index?id={{orderDetail.proList[indexs].id}}" hover-class="navigator-hover">
+                  <view class='order-img'>
+                    <image class="order-product-img" src="{{orderDetail.proList[indexs].pics[0]}}"></image>
+                  </view>
+                  <view class='order-right'>
+                    <view class='light-desc-text'>{{orderDetail.proList[indexs].title}}</view>
+                    <text class='pro-desc'>{{orderDetail.proList[indexs].size}} ×{{orderDetail.proList[indexs].num}}</text>
+                  </view>
+                </navigator>
+              </view>
+            </view>
+          </view>
+          <view class="product-comment-box">
+
+            <textarea class='comment-cont' name='content{{indexs}}' placeholder='输入宝贝的评价，分享给想买的他们吧' placeholder-style="color:#ddd;font-size:14px"></textarea>
+            <a class="comment-photo" data-id="{{indexs}}" type="default" size="mini" bindtap="chooseImage">
+              <image class="comment-photo-img" src="/resources/images/photo2.png"></image>
+              <text class='photo-title'>上传图片</text>
+            </a>
+            <view class='pic-list' wx:for="{{picList[indexs]}}" wx:for-index="index">
+              <a class='picbox'>
+                <a class='picclose' bindtap="onClose" data-index1="{{indexs}}" data-index2="{{index}}">X</a>
+                <image src='http://pic.xiandengshi.com/{{picList[indexs][index].fileName}}'></image>
+              </a>
+            </view>
+            <view class='clear'></view>
+          </view>
+        </view>
+        <button class='order-btn' formType="submit">发布</button>
+        <button class='cancle-btn' bindtap="onReturn">取消</button>
+      </view>
+    </form>
+  </view>
+</view>

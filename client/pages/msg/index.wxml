@@ -1,0 +1,66 @@
+<!--pages/msg/index.wxml-->
+<view class="container">
+
+  <view class="msg-list">
+    <view class="msg-item">
+      <view class='msg-content'>
+        <text class="title">北欧玻璃罩实木灯-您的物流已经发送</text>
+        <text class="content">北欧玻璃罩实木灯-您的物流已经发送</text>
+      </view>
+      <view class='msg-right'>
+         <text class="time">18/03/24</text>
+         <image class="msg-img" src="/resources/images/home-images.jpg"></image>
+      </view>
+    </view>
+
+    <view class="msg-item">
+      <view class='msg-content'>
+        <text class="title">北欧玻璃罩实木灯-您的物流已经发送</text>
+        <text class="content">北欧玻璃罩实木灯-您的物流已经发送</text>
+      </view>
+      <view class='msg-right'>
+         <text class="time">18/03/24</text>
+         <image class="msg-img" src="/resources/images/home-images.jpg"></image>
+      </view>
+    </view>
+
+    <view class="msg-item">
+      <view class='msg-content'>
+        <text class="title">北欧玻璃罩实木灯-您的物流已经发送</text>
+        <text class="content">北欧玻璃罩实木灯-您的物流已经发送</text>
+      </view>
+      <view class='msg-right'>
+         <text class="time">18/03/24</text>
+         <image class="msg-img" src="/resources/images/home-images.jpg"></image>
+      </view>
+    </view>
+
+    <view class="msg-item">
+      <view class='msg-content'>
+        <text class="title">北欧玻璃罩实木灯-您的物流已经发送</text>
+        <text class="content">北欧玻璃罩实木灯-您的物流已经发送</text>
+      </view>
+      <view class='msg-right'>
+         <text class="time">18/03/24</text>
+         <image class="msg-img" src="/resources/images/home-images.jpg"></image>
+      </view>
+    </view>
+
+    <view class="msg-item">
+      <view class='msg-content'>
+        <text class="title">北欧玻璃罩实木灯-您的物流已经发送</text>
+        <text class="content">北欧玻璃罩实木灯-您的物流已经发送</text>
+      </view>
+      <view class='msg-right'>
+         <text class="time">18/03/24</text>
+         <image class="msg-img" src="/resources/images/home-images.jpg"></image>
+      </view>
+    </view>
+  </view>
+  
+  <!--
+  <view class='tip'>
+    <text class="tip-content">没有任何消息</text>
+  </view>
+  -->
+</view>

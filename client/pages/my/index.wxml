@@ -1,0 +1,88 @@
+<!--pages/my/index.wxml-->
+<view class=''>
+  <view class="ds-my-head-box">
+    <image class="my-head" src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}}"></image>
+    <button class='my-username' open-type="getUserInfo" bindgetuserinfo="onLogin">{{logged ? userInfo.nickName : '点击登录'}}</button>
+    <text class='my-jifen'>积分:{{userInfo.credit}}</text>
+  </view>
+
+  <view class="ds-my-wuliu-box">
+    <view class="ds-my-all-order">
+      <view class='ds-my-all-order-cont'>
+        <text class='ds-look-order'>查看全部订单</text>
+        <navigator class="ds-home-menu" url="/pages/orderprocess/index?type=0" hover-class="navigator-hover">
+          <image class="ds-my-order-img" src="/resources/images/next.png"></image>
+        </navigator>
+      </view>
+    </view>
+    <view class="ds-my-piece-order">
+      <view class='my-wuliu-item'>
+        <navigator class="ds-home-menu" url="/pages/orderprocess/index?type=1" hover-class="navigator-hover">
+          <image class="ds-my-wuliu-item-img" src="/resources/images/fk.png"></image>
+          <view wx:if="{{orderCount.unPayCount>0}}" class='my-order-num'>{{orderCount.unPayCount}}</view>
+          <text class='my-wuliu-title'>待付款</text>
+        </navigator>
+      </view>
+      <view class='my-wuliu-item'>
+        <navigator class="ds-home-menu" url="/pages/orderprocess/index?type=2" hover-class="navigator-hover">
+          <image class="ds-my-wuliu-item-img" src="/resources/images/fh.png"></image>
+          <text class='my-order-num' wx:if="{{orderCount.unSendCount>0}}">{{orderCount.unSendCount}}</text>
+          <text class='my-wuliu-title'>待发货</text>
+        </navigator>
+      </view>
+      <view class='my-wuliu-item'>
+        <navigator class="ds-home-menu" url="/pages/orderprocess/index?type=3" hover-class="navigator-hover">
+          <image class="ds-my-wuliu-item-img" src="/resources/images/sh.png"></image>
+          <text class='my-order-num' wx:if="{{orderCount.receiveCount>0}}">{{orderCount.receiveCount}}</text>
+          <text class='my-wuliu-title'>待收货</text>
+        </navigator>
+        <view class='my-wuliu-item'>
+          <navigator class="ds-home-menu" url="/pages/orderprocess/index?type=4" hover-class="navigator-hover">
+            <image class="ds-my-wuliu-item-img" src="/resources/images/pj.png"></image>
+            <text class='my-order-num' wx:if="{{orderCount.commentCount>0}}">{{orderCount.commentCount}}</text>
+            <text class='my-wuliu-title'>待评价</text>
+          </navigator>
+        </view>
+        <!-- <view class='my-wuliu-item'>
+          <navigator class="ds-home-menu" url="/pages/orderprocess/index?type=5" hover-class="navigator-hover">
+            <image class="ds-my-wuliu-item-img" src="/resources/images/fw.png"></image>
+            <text class='my-order-num' wx:if="{{orderCount.serviceCount>0}}">{{orderCount.serviceCount}}</text>
+            <text class='my-wuliu-title'>售后</text>
+          </navigator>
+        </view> -->
+      </view>
+    </view>
+  </view>
+
+  <view class='my-item-box'>
+    <view class='my-service-money-item ds-my-all-order'>
+      <!-- <view class='ds-my-all-order-cont'>
+        <navigator class="ds-home-menu" url="/pages/income/index?type={{menu_list[index].menu_text}}" hover-class="navigator-hover">
+          <image class="ds-my-order-img" src="/resources/images/next.png"></image>
+          <text class='my-service-title'>我的收入<text class='income-tip'>分享下单得红包</text></text>
+        </navigator>
+      </view> -->
+    </view>
+
+    <view class='my-service-addr-item ds-my-all-order'>
+    <view class='ds-my-all-order-cont'>
+      <view class="ds-home-menu" bindtap="onMyaddr" hover-class="navigator-hover">
+        <image class="ds-my-order-img" src="/resources/images/next.png"></image>
+        <text class='my-service-title'>我的地址</text>
+      </view>
+      </view>
+    </view>
+
+    <view class='my-service-about-item ds-my-all-order'>
+    <view class='ds-my-all-order-cont'>
+      <navigator class="ds-home-menu" url="/pages/about/index?type={{menu_list[index].menu_text}}" hover-class="navigator-hover">
+        <image class="ds-my-order-img" src="/resources/images/next.png"></image>
+        <text class='my-service-title'>关于我们</text>
+      </navigator>
+      </view>
+    </view>
+  </view>
+  <view class='my-comp-addr'>
+    <text class='addr-text'>www.xiandengshi.com</text>
+  </view>
+</view>

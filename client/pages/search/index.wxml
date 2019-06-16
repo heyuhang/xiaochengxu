@@ -1,0 +1,29 @@
+<!--pages/search/index.wxml-->
+<view>
+<view class='search-box'>
+  <view class="ds-home-search">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="ds-search">
+        <image class="search-icon" src="/resources/images/search.png"></image>
+        <input bindblur="onSearch" class="ds-search-text" name="cont" placeholder="输入搜索" />
+        <!-- <button class="search-bth" formType="submit">取消</button> -->
+      </view>
+    </form>
+  </view>
+</view>
+<view class="sd-list-box">
+  <view class="light-list-item" wx:for="{{light_list}}"  wx:for-index="index">
+      <view class="light-img">
+        <image class="light-imgge" src="{{light_list[index].pics[0]}}"></image>
+      </view>
+      <view class='light-desc'>
+        <text class="light-desc-text">{{light_list[index].title}}</text>
+        <text class="light-desc-price">{{light_list[index].price}} 元/件</text>
+        <text class="light-desc-tag">{{light_list[index].tag}} • 月售货{{light_list[index].sales_num}}件</text>
+        <navigator class="ds-list-detail-url" url="/pages/detail/index?id={{light_list[index].id}}" hover-class="navigator-hover">
+          <image class="list-detail-img" src="/resources/images/next.png"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

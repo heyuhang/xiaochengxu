@@ -1,0 +1,33 @@
+<!--pages/comment/index.wxml-->
+<view class="container">
+  <view class="comment-list">
+    <view class="detail-comment">
+    <view wx:for="{{tagList}}" wx:for-index="index">
+      <text class='detail-tag-item'>{{tagList[index].tag}}({{tagList[index].size}})</text>
+      </view>
+    </view>
+    <view wx:for="{{commentList}}" wx:for-index="index" class='box'>
+      <view class="detail-comment">
+        <text class='detail-comment-user'>{{commentList[index].rep_cont}}</text>
+        <text class='detail-comment-text'>{{commentList[index].content}}</text>
+        <view wx:if="{{commentList[index].pics[0] != '0' && commentList[index].pics[0] != ''}}">
+          <view wx:for="{{commentList[index].pics}}" wx:for-index="index2" class="imgbox">
+            <a href="http://pic.xiandengshi.com/{{commentList[index].pics[index2]}}">
+              <image src='http://pic.xiandengshi.com/{{commentList[index].pics[index2]}}'></image>
+            </a>
+          </view>
+          <view class='clear'></view>
+        </view>
+        <text class='detail-comment-solesize'>{{commentList[index].addtime}} {{commentList[index].pro_size}}</text>
+      </view> 
+    </view> 
+    <view class='clear'></view>
+  </view>
+
+  <view class="ds-detail-bottom-bar">
+    <a class="ds-detail-phone-btn"><image class="ds-detail-phone-img" src="/resources/images/phone.png"></image>
+咨询</a>
+    <a class="ds-detail-shop-btn">加入购物车</a>
+    <a class="ds-detail-shoping-btn">立即购买</a>
+  </view> 
+</view>

@@ -1,0 +1,163 @@
+<view class='detail-box'>
+  <view class='ds-detail-ad'>
+    <scroll-view scroll-y="true" class='detail-imgs'>
+      <swiper class="detail-swiper" autoplay="auto" interval="3000" duration="900">
+        <block wx:for="{{detail_info.pics}}" wx:for-index="index">
+          <swiper-item>
+            <view class="ar_coverpath">
+              <image class="detail-images" src="{{detail_info.pics[index]}}" mode="aspectFill" />
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </scroll-view>
+    <view class="ds-detail-head">
+      <text class="ds-detail-title">{{detail_info.title}}</text>
+      <button class='share' id="shareBtn" open-type="share" type="primary" style="background:#fff">
+        <image class="ds-detail-share" src="/resources/images/share.png" open-type='share'></image>
+        <text class="ds-detail-zf">分享</text>
+      </button>
+      <view class="ds-detail-price">
+        <text class="ds-detail-title">¥{{detail_info.price}}</text>
+        <text class="ds-detail-sourceprice">市场价格：¥<text class="source-price">{{detail_info.source_price}} </text></text>
+      </view>
+      <view class="ds-detail-desc">
+        <text class="ds-detail-tag">{{detail_info.tag}}</text>
+        <text class="ds-detail-salesize">月销量: {{detail_info.sales_num}} 件</text>
+        <text class="ds-detail-addr">{{detail_info.address}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- <view class="ds-detail-size-select">
+    <text class="ds-detail-size-title" data-specifications='{{detail_info.specifications}}'>规格介绍</text>
+    <a class="ds-home-menu">
+      <image class="ds-detail-size-img" src="/resources/images/next.png"></image>
+    </a>
+  </view> -->
+
+  <view class="ds-detail-service">
+    <view class='ds-detail-service-cont'>
+      <text class='detail-jifen'>积分</text>
+      <text class='detail-get-jifen'>购买可得{{detail_info.credit}}积分</text>
+    </view>
+    <view class="detail-service-list" bindtap="onProtect">
+      <text class='detail-service-item'>正品保障</text>
+      <text class='detail-service-item'>七天无理由退货</text>
+      <text class='detail-service-item'>极速退款</text>
+      <text class='detail-service-item'>顺丰物流</text>
+      <a class="ds-home-menu">
+        <image class="ds-detail-size-img" src="/resources/images/next.png"></image>
+      </a>
+      <view class='clear'></view>
+    </view>
+  </view>
+  <view class="ds-detail-comments" wx:if="{{commentCount==0}}">
+    <view class='no-comment'>暂无评价</view>
+  </view>
+  
+  <view class="ds-detail-comments" wx:if="{{commentCount>0}}">
+    <text class='detail-comment-title'>商品评价（{{commentCount}}）</text>
+    <view class="detail-comment-tag-list">
+      <view wx:for="{{tagList}}" wx:for-index="index">
+        <text class='detail-tag-item'>{{tagList[index].tag}}({{tagList[index].size}})</text>
+      </view>
+    </view>
+    <view class="clear"></view>
+    <view wx:for="{{commentList}}" wx:for-index="index">
+      <view class="detail-comment">
+        <text class='detail-comment-user'>{{commentList[index].rep_cont}}</text>
+        <text class='detail-comment-text'>{{commentList[index].content}}</text>
+        <text class='detail-comment-solesize'>{{commentList[index].addtime}} {{commentList[index].pro_size}}</text>
+      </view>
+    </view>
+    <view class="detail-comment-bths">
+      <navigator class="detail-comment-more-bth" url="/pages/comment/index?id={{detail_info.id}}" hover-class="navigator-hover">
+        查看更多评价
+      </navigator>
+    </view>
+  </view>
+
+  <view class="ds-detail-product-desc">
+    <text class='ds-detail-product-title'>商品介绍</text>
+    <view class='detail-desc'>
+    <import src="../wxParse/wxParse.wxml"/>
+<template is="wxParse" data="{{wxParseData:desc.nodes}}"/>
+    </view>
+    <!-- <image class="product-img" src='/resources/images/home-images.jpg'></image>
+    <image class="product-img" src='/resources/images/home-images02.jpeg'></image>
+    <image class="product-img" src='/resources/images/home-images.jpg'></image> -->
+  </view>
+
+
+  <view class="ds-detail-bottom-bar">
+    <a class="ds-detail-phone-btn" bindtap='tel'>
+      <image class="ds-detail-phone-img" src="/resources/images/phone.png"></image>
+      咨询</a>
+    <a class="ds-detail-shop-btn" bindtap="onShop" data-specifications='{{detail_info.specifications}}'>加入购物车</a>
+    <a class="ds-detail-shoping-btn" data-product-id="{{detail_info.id}}" data-specifications='{{detail_info.specifications}}' bindtap="onBuy">立即购买</a>
+  </view>
+  <view class='product-protect' style="display:{{protectDisplay}}">
+    <view class='protect-title'>基础保障</view>
+    <view>
+      <view class='protect-item'>
+        <view class='item-title'>正品保障</view>
+        <view class='item-desc'>-该商品由我公司承担质量保证</view>
+      </view>
+      <view class='protect-item'>
+        <view class='item-title'>七天无理由退货</view>
+        <view class='item-desc'>-该商品由我公司承担质量保证</view>
+      </view>
+      <view class='protect-item'>
+        <view class='item-title'>极速退款</view>
+        <view class='item-desc'>-该商品由我公司承担质量保证</view>
+      </view>
+      <view class='protect-item'>
+        <view class='item-title'>极速退货</view>
+        <view class='item-desc'>-该商品由我公司承担质量保证</view>
+      </view>
+      <view class='protect-item'>
+        <view class='item-title'>顺丰物流</view>
+        <view class='item-desc'>-该商品由我公司承担质量保证</view>
+      </view>
+    </view>
+    <a class="protect-btn" bindtap="onCloseShop">完成</a>
+  </view>
+  <view class='production-size' style="display:{{productionSizeDisplay}}">
+    <view class='size-box'>
+      <view class="close" bindtap="onCloseShop">X</view>
+      <view class='pro-desc-box'>
+        <image class="pro-desc-img" src="{{detail_info.pics[0]}}"></image>
+        <view class='pro-desc-title'>
+          <text>{{detail_info.title}}</text>
+          <view class="pro-desc-price">¥{{selectPrice}}/件
+            <text class="select-sprice ds-detail-sourceprice">¥{{selectSprice}}/件</text>
+          </view>
+        </view>
+      </view>
+      <view class='clear'></view>
+      <view class='desc-title'>规格</view>
+      <view class="specifications-box" wx:for="{{specifications}}" wx:for-index="index">
+        <view class='specifications {{selectIndex==index?"selected":""}}' bindtap="onSelectSp" data-price="{{specifications[index].price}}" data-sprice="{{specifications[index].sPrice}}" data-index="{{index}}">{{specifications[index].name}}</view>
+      </view>
+      <view class='clear'></view>
+      <view class='desc-title desc-title-num'>数量</view>
+      <view class='ds-shop-product-price'>
+        <a class="shop-jian" bindtap='onProNumJian'>-</a>
+        <input class='light-size' bindchange="onProNumChange" value='{{selectCount}}' />
+        <a class="shop-jia" bindtap='onProNumJia'>+</a>
+      </view>
+      <view class='selected-price-box'>合计
+        <text class='price'>¥{{totlePrice}}</text>
+        <text class='select-sprice'>¥{{totleSprice}}</text>
+      </view>
+      <a class="ds-detail-shop-btn size-btn" data-product-id="{{detail_info.id}}" wx:if="{{buyBtnType==1}}" bindtap="onAddShop">加入购物车</a>
+      <navigator class="ds-detail-shoping-btn size-btn" wx:if="{{buyBtnType==2}}" bindtap="onNowBuy" data-product-id="{{detail_info.id}}" hover-class="navigator-hover">立刻购买</navigator>
+    </view>
+  </view>
+  <view class="shop-image-box" bindtap="jumpShop">
+    <image class="shop-image" src="/resources/images/shopping.png"/>
+    <view class='shopCount'>{{shopCount}}</view>
+  </view>
+  <view class='mengbang' bindtap="onCloseShop" style="display:{{blockDisplay}}"></view>
+</view>

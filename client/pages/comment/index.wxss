@@ -1,0 +1,133 @@
+/* pages/comment/index.wxss */
+.comment-list {
+  background: #fff;
+  width: 100%;
+  position: relative;
+}
+.box{
+  float:left;
+  width:100%;
+}
+
+.detail-box{
+  width: 100%;
+}
+
+.imgbox{
+  float: left;
+  width:100px;
+  height:100px;
+  margin: 0px 0px 10px 10px;
+}
+
+.imgbox image{
+  width:100px;
+  height:100px; 
+}
+.detail-comment {
+  display: block;
+  font-size: 13px;
+  border-top: 1px solid #efefef; 
+  width:100%;
+}
+
+.detail-comment-text {
+  padding: 10px;
+  padding-top: 5px; 
+  display: block;
+  padding-bottom: 5px; 
+}
+
+.detail-comment-user {
+    overflow: hidden;
+    color: #999;
+    display: block;
+    padding: 5px 10px;
+    padding-bottom: 0px; 
+}
+
+.detail-comment-solesize {
+  display: block;
+  font-size: 13px;
+  color: #999;
+  line-height: 14px;
+  padding: 10px;
+  padding-top: 0px; 
+}
+
+.detail-comment-tag-list {
+  padding: 10px;
+  width:100%;
+}
+
+.detail-comment .detail-tag-item {
+  float: left;
+  background-color: #FFF5F7;
+  color: #666;
+  margin: 6px 6px;
+  padding: 6px 9px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 13px;  
+}
+
+.ds-detail-bottom-bar {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background: #fff;
+  height: 50px;
+  border-top: 1px solid #efefef;
+}
+
+.phone {
+  float: left;
+  display: block;
+}
+
+.ds-detail-shop-btn {
+    display: inline-block;
+    flex: 1;
+    color: #fff;
+    position: absolute;
+    width: 30%;
+    font-size: 13px;
+    height: 50px;
+    line-height: 49px;
+    right: 30%;
+    text-align: center;
+    background-color: #FF9500;
+}
+
+.ds-detail-shoping-btn {
+    display: inline-block;
+    flex: 1;
+    color: #fff;
+    position: absolute;
+    width: 30%;
+    font-size: 13px;
+    height: 50px;
+    line-height: 49px;
+    right: 0px;
+    text-align: center;
+    background-color: #333;
+}
+
+.ds-detail-phone-btn {
+    display: inline-block;
+    flex: 1;
+    color: #333;
+    position: absolute;
+    width: 40%;
+    font-size: 13px;
+    height: 50px;
+    line-height: 49px;
+    text-align: center;
+}
+
+.ds-detail-phone-img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  vertical-align: middle;
+}

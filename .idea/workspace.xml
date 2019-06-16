@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="65e352d2-b4e2-4b2b-b430-4c6af32694e6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pages/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pages/login.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pages/login.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pages/login.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pages/login/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pages/login/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pages/login/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pages/login/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pages/pay/pay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pages/pay/pay.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pages/pay/pay.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pages/pay/pay.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/resources/images/photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/resources/images/photo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/resources/images/photo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/resources/images/shopping.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/resources/images/wechat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/sitemap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/utils/filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/application/controllers/Image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/composer/autoload_files.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/.scrutinizer.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/docs/rtc/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/docs/rtc/example.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/cdn_get_bandwidth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/cdn_get_flux.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/cdn_get_log_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/cdn_refresh_urls_dirs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/cdn_timestamp_antileech.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/image_url_builder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/persistent_fop_init.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/persistent_fop_status.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/pfop_mkzip.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/pfop_vframe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/pfop_video_avthumb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/pfop_watermark.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/php-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/prefop.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/pulpvideo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/qetag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_batch_change_mime.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_batch_change_type.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_batch_copy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_batch_delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_batch_delete_after_days.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_batch_move.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_batch_stat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_bucket_domains.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_buckets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_change_mime.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_change_status.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_change_type.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_copy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_delete_after_days.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_download_urls.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_fetch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_move.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_prefetch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rs_stat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rsf_list_bucket.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/rsf_list_files.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/saveas.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/upload_and_callback.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/upload_and_pfop.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/upload_mgr_init.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/upload_multi_demos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/upload_simple_file.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/upload_tokens.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/examples/upload_verify_callback.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Cdn/CdnManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Etag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Http/Client.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Http/Error.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Http/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Http/Response.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Processing/ImageUrlBuilder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Processing/Operation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Processing/PersistentFop.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Rtc/AppClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Storage/ArgusManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Storage/BucketManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Storage/FormUploader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Storage/ResumeUploader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Storage/UploadManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Zone.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/test-env.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/tests/Qiniu/Tests/AuthTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/tests/Qiniu/Tests/Base64Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/tests/Qiniu/Tests/BucketTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/tests/Qiniu/Tests/CdnManagerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/tests/Qiniu/Tests/Crc32Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/tests/Qiniu/Tests/DownloadTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/tests/Qiniu/Tests/EtagTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/tests/Qiniu/Tests/FopTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/tests/Qiniu/Tests/FormUpTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/tests/Qiniu/Tests/HttpTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/tests/Qiniu/Tests/ImageUrlBuilderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/tests/Qiniu/Tests/PfopTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/tests/Qiniu/Tests/ResumeUpTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/tests/Qiniu/Tests/ZoneTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/vendor/qiniu/php-sdk/tests/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wafer2-quickstart-php-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wafer2-quickstart-php-master.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/addcomment/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/addcomment/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/addcomment/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/addcomment/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/addcomment/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/addcomment/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/comment/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/comment/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/comment/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/comment/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pages/detail/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/detail/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/application/business/CommentService.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/application/business/CommentService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/application/controllers/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/application/controllers/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/application/models/CommentModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/application/models/CommentModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/application/models/ShopModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/application/models/ShopModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/vendor/composer/installed.json" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/server/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="OrderModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/application/models/OrderModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/application/models/CommentModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="60" column="43" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shop.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/application/controllers/Shop.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShopModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/application/models/ShopModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53">
+              <caret line="55" selection-start-line="55" selection-end-line="59" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Comment.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/application/controllers/Comment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="60" column="38" lean-forward="true" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Welcome.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/application/controllers/Welcome.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Ad.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/application/controllers/Ad.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Upload.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/application/controllers/Upload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-727">
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="25" />
+              <folding>
+                <element signature="e#71#106#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentService.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/application/business/CommentService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/application/controllers/Order.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="49" column="11" lean-forward="true" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>腾讯云微信小程序服务端</find>
+      <find>ChatTunnelHandler</find>
+      <find>CI_Loader</find>
+      <find>dbdriver</find>
+      <find>BASEPATH</find>
+      <find>$config</find>
+      <find>Production</find>
+      <find>Comment</find>
+      <find>Ad</find>
+      <find>WeiXin_Xd_Conf</find>
+      <find>登录错误：缺少登录地址</find>
+      <find>setLoginUrl</find>
+      <find>open_id</find>
+      <find>cSessionInfo</find>
+      <find>wxParse</find>
+      <find>x-wx-skey</find>
+      <find>WX_HEADER_SKEY</find>
+      <find>loginState</find>
+      <find>CommentService</find>
+      <find>getByUid</find>
+      <find>ProductionModel</find>
+      <find>getUserByToken</find>
+      <find>getByToken</find>
+      <find>ShopService</find>
+      <find>homedepot_shop</find>
+      <find>insert</find>
+      <find>insertShop</find>
+      <find>getShopDetail</find>
+      <find>uploadFolder</find>
+      <find>user</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Comment</replace>
+      <replace>User</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/server/application/controllers/Ad.php" />
+        <option value="$PROJECT_DIR$/server/application/business/BaseService.php" />
+        <option value="$PROJECT_DIR$/server/application/models/Ad.php" />
+        <option value="$PROJECT_DIR$/server/application/business/AdService.php" />
+        <option value="$PROJECT_DIR$/server/application/models/AdModel.php" />
+        <option value="$PROJECT_DIR$/client/config.js" />
+        <option value="$PROJECT_DIR$/client/vendor/wafer2-client-sdk/lib/request.js" />
+        <option value="$PROJECT_DIR$/server/application/models/SortModel.php" />
+        <option value="$PROJECT_DIR$/server/application/business/SortService.php" />
+        <option value="$PROJECT_DIR$/server/application/controllers/Sort.php" />
+        <option value="$PROJECT_DIR$/server/application/models/ProductionModel.php" />
+        <option value="$PROJECT_DIR$/server/application/business/ProductionService.php" />
+        <option value="$PROJECT_DIR$/server/application/controllers/Production.php" />
+        <option value="$PROJECT_DIR$/server/application/controllers/User.php" />
+        <option value="$PROJECT_DIR$/server/config.php" />
+        <option value="$PROJECT_DIR$/server/application/controllers/Login.php" />
+        <option value="$PROJECT_DIR$/server/application/business/UserService.php" />
+        <option value="$PROJECT_DIR$/server/application/models/UserModel.php" />
+        <option value="$PROJECT_DIR$/server/application/business/OrderService.php" />
+        <option value="$PROJECT_DIR$/server/application/models/OrderModel.php" />
+        <option value="$PROJECT_DIR$/server/application/controllers/Order.php" />
+        <option value="$PROJECT_DIR$/server/application/controllers/Shop.php" />
+        <option value="$PROJECT_DIR$/server/application/business/ShopService.php" />
+        <option value="$PROJECT_DIR$/server/application/controllers/Image.php" />
+        <option value="$PROJECT_DIR$/server/application/models/ShopModel.php" />
+        <option value="$PROJECT_DIR$/server/application/controllers/Comment.php" />
+        <option value="$PROJECT_DIR$/server/application/models/CommentModel.php" />
+        <option value="$PROJECT_DIR$/server/application/business/CommentService.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/client/vendor/wafer2-client-sdk/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/server/vendor/composer" />
+      <path value="$PROJECT_DIR$/server/vendor/guzzle/guzzle" />
+      <path value="$PROJECT_DIR$/server/vendor/qcloud/weapp-sdk" />
+      <path value="$PROJECT_DIR$/server/vendor/qcloud/cos-sdk-v5" />
+      <path value="$PROJECT_DIR$/server/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/server/vendor/qiniu/php-sdk" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="20" />
+    <option name="y" value="35" />
+    <option name="width" value="1400" />
+    <option name="height" value="795" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="wafer2-quickstart-php-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wafer2-quickstart-php-master" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wafer2-quickstart-php-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wafer2-quickstart-php-master" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wafer2-quickstart-php-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wafer2-quickstart-php-master" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wafer2-quickstart-php-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wafer2-quickstart-php-master" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="business" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wafer2-quickstart-php-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wafer2-quickstart-php-master" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wafer2-quickstart-php-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wafer2-quickstart-php-master" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wafer2-quickstart-php-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wafer2-quickstart-php-master" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wafer2-quickstart-php-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wafer2-quickstart-php-master" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wafer2-quickstart-php-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wafer2-quickstart-php-master" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/pages" />
+      <recent name="$PROJECT_DIR$/client/pages/my" />
+      <recent name="$PROJECT_DIR$/client" />
+      <recent name="$PROJECT_DIR$/server/application/business" />
+      <recent name="$PROJECT_DIR$/server/application/models" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="models" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/server/application/models" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.models" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65e352d2-b4e2-4b2b-b430-4c6af32694e6" name="Default" comment="" />
+      <created>1525542751614</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1525542751614</updated>
+      <workItem from="1525542752887" duration="5592000" />
+      <workItem from="1525593142183" duration="4852000" />
+      <workItem from="1525673137882" duration="1739000" />
+      <workItem from="1525695153734" duration="4547000" />
+      <workItem from="1525756591565" duration="4765000" />
+      <workItem from="1525789354695" duration="2816000" />
+      <workItem from="1525795077209" duration="1096000" />
+      <workItem from="1525876411415" duration="2793000" />
+      <workItem from="1525963250398" duration="2402000" />
+      <workItem from="1529313962918" duration="954000" />
+      <workItem from="1529330507071" duration="1136000" />
+      <workItem from="1529333112312" duration="236000" />
+      <workItem from="1540105230406" duration="249000" />
+      <workItem from="1540118796528" duration="6837000" />
+      <workItem from="1540642328257" duration="3447000" />
+      <workItem from="1541329126118" duration="3902000" />
+      <workItem from="1541429152897" duration="542000" />
+      <workItem from="1541902350595" duration="574000" />
+      <workItem from="1542033046559" duration="2827000" />
+      <workItem from="1542431758683" duration="3258000" />
+      <workItem from="1542787977328" duration="6602000" />
+      <workItem from="1543414372451" duration="1688000" />
+      <workItem from="1544492853531" duration="160000" />
+      <workItem from="1544502520552" duration="229000" />
+      <workItem from="1555253308188" duration="1059000" />
+      <workItem from="1555323950075" duration="1356000" />
+      <workItem from="1555394057225" duration="430000" />
+      <workItem from="1557308568092" duration="774000" />
+      <workItem from="1557546444303" duration="9406000" />
+      <workItem from="1558355665065" duration="6115000" />
+      <workItem from="1558797430141" duration="8331000" />
+      <workItem from="1559443941868" duration="6252000" />
+    </task>
+    <task id="LOCAL-00001" summary="iti">
+      <created>1540127885972</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540127885972</updated>
+    </task>
+    <task id="LOCAL-00002" summary="iti">
+      <created>1559454055848</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559454055848</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="96966000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="20" y="35" width="1400" height="795" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32871014" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="iti" />
+    <option name="LAST_COMMIT_MESSAGE" value="iti" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/server/vendor/qcloud/weapp-sdk/lib/Mysql/Mysql.php</url>
+          <line>3</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/client/vendor/wafer2-client-sdk/lib/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="143" column="14" lean-forward="true" selection-start-line="143" selection-start-column="14" selection-end-line="143" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/vendor/wafer2-client-sdk/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="163">
+            <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cAuth.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/json/json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="88" column="20" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/vendor/qcloud/weapp-sdk/lib/Model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/vendor/qcloud/weapp-sdk/lib/Auth/AuthAPI.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/vendor/wafer2-client-sdk/lib/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/vendor/wafer2-client-sdk/lib/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/business/SortService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/business/ChatTunnelHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/controllers/Sort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/PDO/PDO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19770">
+          <caret line="1318" column="20" selection-start-line="1318" selection-start-column="20" selection-end-line="1318" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/regex/ereg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2490">
+          <caret line="166" column="9" selection-start-line="166" selection-start-column="9" selection-end-line="166" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13785">
+          <caret line="919" column="9" selection-start-line="919" selection-start-column="9" selection-end-line="919" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/vendor/qcloud/weapp-sdk/lib/Auth/LoginService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1254" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/controllers/Tunnel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/controllers/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4336" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/models/SortModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/models/UserModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="47" column="69" lean-forward="true" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/models/AdModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/controllers/Production.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/business/ProductionService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/business/AdService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/business/UserService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/models/ProductionModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8265">
+          <caret line="551" column="9" selection-start-line="551" selection-start-column="9" selection-end-line="551" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/vendor/qcloud/weapp-sdk/lib/Mysql/Mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="51" column="22" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.config.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/composer.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/controllers/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="40" column="29" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Storage/FormUploader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-339">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/controllers/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding>
+            <element signature="e#90#122#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/system/core/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/vendor/qiniu/php-sdk/src/Qiniu/Storage/UploadManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/business/OrderService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/business/ShopService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="239" column="4" selection-start-line="239" selection-start-column="4" selection-end-line="239" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/controllers/Welcome.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/controllers/Ad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/controllers/Upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-727">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="e#71#106#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/controllers/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="60" column="38" lean-forward="true" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/controllers/Shop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/controllers/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="49" column="11" lean-forward="true" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/models/OrderModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/models/ShopModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="55" selection-start-line="55" selection-end-line="59" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/models/CommentModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="60" column="43" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/application/business/CommentService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,249 @@
+/* pages/shop/index.wxss */
+.ds-shop-item {
+  background: #fff;
+  height: 100px;
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.empty-shop{
+  position: absolute;
+  top: 50px;
+}
+
+.light-size-title {
+  font-size: 12px;
+  color: #999;
+}
+
+.empty-title{
+  color: #aaa;
+}
+
+.return-btn{
+  margin-top: 10px;
+  font-size: 15px;
+  background: #FF9500;
+  color: #fff;
+}
+
+.ds-shop-list {
+  width: 100%;
+  margin-bottom:50px;
+}
+
+.light-img {
+  width: 33%;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 3px;
+  float: left;
+}
+
+.shop-select {
+  float: left;
+  position: relative;
+  display: block;
+  margin-top: 35px; 
+  margin-right: 10px; 
+}
+
+.light-img .shop-light-imgge {
+  width: 100%;
+  height: 100px; 
+}
+
+.ds-shop-product {
+  display: block; 
+  position: relative;
+}
+
+.light-desc {
+  margin-left: 10px;
+  float: left;
+  width: 64%; 
+  height: 100px;
+  position: relative;
+}
+
+.light-desc-text {
+  font-size: 15px;
+  line-height: 20px;
+  display: block; 
+}
+
+.light-desc-price {
+  font-size: 17px;
+  color: #FF9500;
+  display: block;
+  line-height: 20px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.ds-shop-product-price {
+  position: absolute;
+  width: 80px;
+  height: 25px;
+  line-height: 20px;
+  background: #efefef;
+  bottom: 0px;
+  right: 10px;
+  border-radius: 5px;
+  color: #666;
+  font-size: 15px;
+}
+
+.shop-jian, .shop-jia{
+  position: absolute;
+  padding: 0 10px;
+  line-height: 25px;
+}
+
+.shop-jian {
+  left: 0px;
+}
+
+.shop-jia {
+  right: 0px;
+}
+
+.light-size {
+  text-align: center;
+  line-height: 20px;
+  width: 20px;
+  left: 35%;
+  position: absolute;
+  z-index:0;
+}
+
+.shop-totle-price {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #efefef;
+  bottom: 0px;
+  z-index:1;
+}
+
+.ds-detail-shoping-btn {
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    width: 30%;
+    font-size: 13px;
+    height: 50px;
+    line-height: 49px;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    background-color: #FF9500;
+    z-index: 999;
+}
+
+.totle-price {
+  font-size: 15px;
+  text-align: center;
+  width: 70%;
+  position: absolute;
+  padding-top: 15px;
+  right: 50px; 
+}
+
+.posit{
+  height:121px;
+  width:80px;
+  color:#fff;
+  background:#FF9500;
+  position:absolute;
+  margin-left:100%;
+  top:0px;
+}
+
+.address-item-top{
+  position: relative;
+}
+
+.address-item{
+  position: relative;
+  width:100%;
+  overflow: hidden;
+}
+.del{
+  padding: 50px 10px;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+}
+
+.totle-price-detail {
+  color: #FF9500; 
+}
+
+@media screen and (max-width: 320px) {
+  .light-img {
+    width: 33%;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 3px;
+    float: left;
+  }
+  .light-img .shop-light-imgge {
+    width: 100%;
+    height: 80px; 
+  }
+  .ds-shop-item {
+    background: #fff;
+    width: 100%;
+    height: 80px;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #efefef;
+  }
+  .light-desc {
+    margin-left: 10px;
+    float: left;
+    width: 64%; 
+    height: 80px;
+    position: relative;
+  }
+  .light-desc-price {
+    font-size: 15px;
+    color: #FF9500;
+    display: block;
+    line-height: 20px;
+    position: absolute;
+    bottom: 0px;
+  }
+  .ds-shop-product-price {
+    position: absolute;
+    right: 5px;
+    width: 70px;
+    height: 25px;
+    line-height: 20px;
+    background: #efefef;
+    bottom: 0px;
+  }
+  .shop-select {
+    float: left;
+    position: relative;
+    display: block;
+    margin-top: 25px; 
+    margin-right: 10px; 
+  }
+  .light-size {
+    text-align: center;
+    line-height: 25px;
+    width: 20px;
+    left: 35%;
+    top: 2px;
+    position: absolute;
+  }
+  .shop-jian, .shop-jia{
+    position: absolute;
+    padding: 0 10px;
+    line-height: 25px;
+  }
+}

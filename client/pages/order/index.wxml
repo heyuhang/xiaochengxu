@@ -1,0 +1,29 @@
+<!--pages/order/index.wxml-->
+<view class='order-content'>
+  <text class="order-title">配送地址</text>
+  <view class='order-address'>
+    <view class='address-detail'>
+    收货人：{{orderDetail.name}}
+    </view>
+    <view class='address-detail'>
+    电话：{{orderDetail.phone}}
+    </view>
+    <view class='address-detail'>
+    收获地址：{{orderDetail.local}}-{{orderDetail.address}}
+    
+    <navigator class="address-edit" url="/pages/address/index" hover-class="navigator-hover"> 
+    编辑地址</navigator>
+    </view>
+  </view>
+  <text class="order-title">订单详情</text>
+  <view class='order-detail'>
+    <view wx:for="{{orderDetail.detail}}" wx:for-index="index">
+      <view class="order-text">{{orderDetail.detail[index].title}} x {{orderDetail.detail[index].count}}</view>
+    </view>
+    <view class="clear"></view>
+  </view>
+</view>
+<view class='order-price'>应付：<text class='price'>¥{{orderDetail.totlePrice}}</text></view>
+<button class='order-btn' bindtap="onSumit">确定下单</button>
+<button class='cancle-btn' bindtap="onReturn">返回修改</button>
+
